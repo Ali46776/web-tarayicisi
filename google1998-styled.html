@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<title>Google 1998 Styled</title>
+<style>
+  body {
+    margin: 0; padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    text-align: center;
+  }
+  .top-bar {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot-grid {
+    width: 20px; height: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    cursor: pointer;
+  }
+  .dot-grid div {
+    width: 4px; height: 4px;
+    background: #555;
+    border-radius: 50%;
+  }
+  .top-bar a {
+    color: #0000cc;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .top-bar a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 60px;
+    color: #0000cc;
+    margin: 25px 0 15px 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .search-box {
+    background: #eee;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+  .search-box button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+    color: #888;
+  }
+  .search-box input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .button-group {
+    position: fixed;
+    top: 300px; /* Burayı değiştirdim */
+    left: 0;
+    display: flex;
+    gap: 8px;
+    padding-left: 10px;
+    background: transparent;
+    z-index: 1000;
+  }
+  .button-group input[type="submit"] {
+    padding: 6px 12px;
+    font-size: 14px;
+    background: #f2f2f2;
+    border: 1px solid #999;
+    cursor: pointer;
+  }
+  .button-group input[type="submit"]:hover {
+    background: #e6e6e6;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="dot-grid" title="Google Apps">
+    <div></div><div></div><div></div>
+    <div></div><div></div><div></div>
+    <div></div><div></div><div></div>
+  </div>
+  <a href="#">Images</a>
+  <a href="#">Gmail</a>
+</div>
+
+<h1>Google!</h1>
+
+<div class="container">
+  <form action="https://www.google.com/search" method="get">
+    <div class="search-box">
+      <button type="submit" title="Search">🔍</button>
+      <input type="text" name="q" />
+    </div>
+  </form>
+</div>
+
+<div class="button-group">
+  <input type="submit" value="Google Search" />
+  <input type="submit" value="I'm Feeling Lucky" />
+</div>
+
+</body>
+</html>
