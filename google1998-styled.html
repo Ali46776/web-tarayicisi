@@ -71,14 +71,10 @@
     border-radius: 4px;
   }
   .button-group {
-    position: fixed;
-    top: 300px; /* Burayı değiştirdim */
-    left: 0;
+    margin-top: 10px;
     display: flex;
     gap: 8px;
-    padding-left: 10px;
-    background: transparent;
-    z-index: 1000;
+    justify-content: flex-start;
   }
   .button-group input[type="submit"] {
     padding: 6px 12px;
@@ -112,12 +108,11 @@
       <button type="submit" title="Search">🔍</button>
       <input type="text" name="q" />
     </div>
+    <div class="button-group">
+      <input type="submit" value="Google Search" />
+      <input type="submit" name="btnI" value="I'm Feeling Lucky" />
+    </div>
   </form>
-</div>
-
-<div class="button-group">
-  <input type="submit" value="Google Search" />
-  <input type="submit" value="I'm Feeling Lucky" />
 </div>
 
 </body>
